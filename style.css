@@ -1,0 +1,145 @@
+body{
+  background-color: #f4c2c2;
+  }
+.ff{
+  font-family: 'Galada', cursive;
+  font-size: 25px;
+  padding-left: 10px;
+  }
+.ff1{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 30px; 
+}
+.ff3{
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+   font-size: 22px;
+}
+.pig {
+  color:#f4c2c2;
+}
+.bpig{
+  background-color:#f4c2c2;
+}
+.b{
+  font-family: 'Galada', cursive;
+  font-size: 45px;
+  padding-left: 10px;
+}
+ul>li:hover{
+    text-decoration: underline;
+  }
+  .bake:hover{
+    text-decoration: none;
+  }
+.nbt{
+  border-top: 2px solid #f4c2c2;
+}
+
+/* footer css*/
+a:hover{
+  cursor: pointer;
+}
+.ta{
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+    .tac{
+      text-align: center;
+    }
+    .df{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+  }
+.content{
+  background-color: #f4c2c2;
+  height: 4000px;
+}
+.ed{
+  color: #000;
+  font-size: 100px;
+  position: relative;
+  bottom: 300px;
+}
+.gr{
+  color:#dddddd;
+}
+.sp{
+  font-weight: bold;
+}
+.df1{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.mm{
+  position: relative;
+  bottom: 70px;
+  font-family: 'Galada', cursive;
+}
+.nn{
+  position: relative;
+  bottom: 140px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: 'Galada', cursive;
+}
+.hh{
+  position: relative;
+  bottom: 300px;
+  color: #ddd;
+  font-size: 40px;
+  font-family: 'Galada', cursive;
+}
+.pp{
+  position: relative;
+  bottom: 260px;
+  color: #f4c2c2;
+  font-size: 60px;
+  font-weight: 200;
+  font-family: 'Galada', cursive;
+}
+.hg{
+   position: relative;
+  bottom: 300px;
+  color: #f4c2c2;
+  font-size: 40px;
+  font-family: 'Galada', cursive;
+}
+.pip{
+  position: relative;
+  bottom: 260px;
+  color: #fff  ;
+  font-size: 50px;
+  font-weight: 200;
+  font-family: 'Galada', cursive;
+}
+.h11{
+  position: relative;
+  top: 20px;
+  font-size: 60px;
+}
+.h13{
+  position: relative;
+  top: 30px;
+  font-size: 60px;
+}
+.h12{
+  position: relative;
+  top: 20px;
+}
+.mybtn{
+  padding:10px;
+  outline: 0;
+  border:3px solid #ddd;
+  border-radius: 5px;
+}
