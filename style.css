@@ -1,5 +1,6 @@
 body{
   background-color: #f4c2c2;
+  min-width: 320px;
   }
 .ff{
   font-family: 'Galada', cursive;
@@ -33,6 +34,9 @@ ul>li:hover{
   }
 .nbt{
   border-top: 2px solid #f4c2c2;
+}
+.nbb{
+  border-bottom: 2px solid #f4c2c2;
 }
 
 /* footer css*/
@@ -142,4 +146,128 @@ a:hover{
   outline: 0;
   border:3px solid #ddd;
   border-radius: 5px;
+}
+.inp{
+  height: 38px;
+  outline: none;
+  border:none;
+  border-radius:.25rem;
+}
+.main{
+  margin-right: 40px;
+}
+@media only screen and (max-width: 930px) {
+    .ed{
+      bottom: 200px;
+    }
+}
+.card-body{
+  padding: 20px 0 20px ;
+}
+.card-title{
+  padding: 0;
+}
+.card{
+  padding: 10px;
+}
+.single_content{
+  
+  background: #f4c2c2;  
+}
+.breadcrumb li{
+  color:#343A40;
+}
+a{
+  color:#f4c2c2;
+}
+a:hover{
+  color:#f4c2c2;
+  text-decoration: underline;
+}
+.sort select{
+  border-radius: 15px;
+  padding: 10px;
+  outline: none;
+  color:#f4c2c2;
+}
+.breadcrumb{
+  margin-bottom: 0;
+  border-bottom: 2px solid #f4c2c2;
+  padding:16px;
+}
+.div_product {
+  padding: 0;
+  margin-bottom: 40px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.also{
+  font-size: 50px; 
+}
+.gallery img {
+  margin-top: 15px;
+}
+.gallery{
+  padding-left: 0;
+}
+.lll{
+  margin-left: 16px;
+}
+.wid{
+  width: 250px;
+  outline: none;
+  margin-top: 40px;
+}
+.g11{
+  font-size: 60px;
+  text-decoration: underline;
+  margin: 0 50px 20px;
+  color: #343A40;
+  transition: 1.2s; 
+}
+.g11:hover{
+  cursor: pointer;
+  color: #f4c2c2;
+}
+.div{
+  height: 1px;
+  background: #343A40;
+  border:1px solid #343A40;
+  box-sizing: border-box;
+}
+.div1{
+  height: 3px;
+  background: #f4c2c2;
+  border:1px solid #f4c2c2;
+  box-sizing: border-box;
+}
+.carrds {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+}
+.gal_img{
+  height: 123px;
+  width: 123px;
+}
+.gal_main{
+  height: 500px;
+  width: 400px;
+}
+.dffd{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
 }

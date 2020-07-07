@@ -15,45 +15,15 @@
     <script src="https://kit.fontawesome.com/ba26090dd3.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    
-      <!-- first row -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-                <div class="col-md-9 col-sm-6  col-xs-6">
-                    <a href="" class="bake"> <h1 class="b"><i class="fas fa-birthday-cake text-warning"></i> <span class="pig"> Bakery</span></h1></a>
-                </div>
 
-                 <div class="d-none col-sm-6 col-md-2 d-md-block col-lg-1 d-lg-block">
-                      <div class="dropdown">
-                      <button class="btn bpig dropdown-toggle text-dark" type="button" id="acc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        My Account
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="acc">
-                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#login" >Login</a>
-                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#register">Register</a>
-                        <a class="dropdown-item" href="#">My orders</a>
-                        <a class="dropdown-item" href="#">Account Setting</a>
-                      </div>
-                    </div>
-               </div>
-
-               <div class="col-md-2 d-sm-none d-none  d-lg-block ">
-                  <button type="button" class="btn bpig " style="margin-left: 30%" >
-                    <i class="fas fa-shopping-cart"></i> Cart <span class="badge badge-danger">3</span>
-                  </button>
-              </div>
-  </nav>
-
-                
-          <!-- first row  end-->
-
-          <!-- second row -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark nbt ">
-    <button class="navbar-toggler bpig" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-md navbar-light bg-dark nbt nbb fix">
+    <button class="navbar-toggler bpig mize" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="menu">
+    <div class="collapse navbar-collapse col-md-11 col-lg-9" id="menu">
       <ul class="navbar-nav mr-auto">
+        
         <li class="nav-item">
           <a class="nav-link ff" style="color:#f4c2c2" href="#">Desserts</a>
         </li>
@@ -74,21 +44,36 @@
           <a class="nav-link ff" style="color:#f4c2c2" href="#">Pies</a>
         </li>
       </ul>
-        
-        <div class="d-none d-sm-none d-md-none d-lg-block">
+     </div>   
+        <div class="d-none d-lg-block">
           <form class="form-inline">
-            <input class="form-control mr-sm-2 text-dark" type="search" placeholder="Search"  aria-label="Search">
-            <button class="btn text-dark my-2 my-sm-0 bpig" type="submit">Search</button>
+            <input class=" mr-sm-2 text-dark inp " type="search" placeholder="Search"  aria-label="Search">
+            <button class="btn text-dark my-2 my-sm-0 bpig" type="submit"><i class="fas fa-search"></i></button>
           </form>
         </div>
-    </div>
+
+               
+        <div class="dropdown  col-3 col-md-1 col-sm-2  col-lg-1 acc">
+          <button class="btn bpig dropdown-toggle text-dark" type="button" id="acc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-alt"></i>
+           </button>
+
+           <div class="dropdown-menu main" aria-labelledby="acc">
+             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#login" >Login</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#register">Register</a>
+             <a class="dropdown-item" href="#">My orders</a>
+             <a class="dropdown-item" href="#">Account Setting</a>
+          </div>
+       </div>
+               
+
+    
   </nav>
 
 
 
           
-        <!-- second row end-->
-        
+        <!-- second row end-->  
 
 
 
@@ -197,31 +182,33 @@
                       <div class="container-fluid h12" >
                         <div class="row">
                             <!-- card 1 -->
-                            <div class="card col-lg-2 col-md-2 col-sm-3 col-xs-4 df2" style="width: 18rem;">
-                              <img class="card-img-top" src="img/cup/cup1.jpg" alt="Card image cap">
-                              <div class="card-body">
-                                <h5 class="card-title ff">  Cupcake</h5>
-                                <p class="card-text ff3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn bpig">Add to Cart</a>
+                            
+                              <div class="card col-lg-2 col-md-2 col-sm-3 col-4 df2" style="width: 18rem;">
+                                <a href="single.html"><img class="card-img-top" src="img/cup/cup1_1.jpg" alt="Card image cap" > </a>
+                                <div class="card-body">
+                                  <h5 class="card-title ff col-12">  Cupcake</h5>
+                                  <p class="card-text ff3 d-none d-sm-block d-md-none d-lg-block">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn bpig">Add to Cart</a>
+                                </div>
                               </div>
-                            </div>
+                            
 
                             <!-- card 2 -->
-                            <div class="card col-lg-2 col-md-2 col-sm-3 col-xs-4 df2" style="width: 18rem;">
+                            <div class="card col-lg-2 col-md-2 col-sm-3 col-4 df2" style="width: 18rem;">
                               <img class="card-img-top" src="img/cook/cook2.jpg" alt="Card image cap">
                               <div class="card-body">
-                                <h5 class="card-title ff">Cookie</h5>
-                                <p class="card-text ff3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h5 class="card-title ff col-12">Cookie</h5>
+                                <p class="card-text ff3 d-none d-sm-block d-md-none d-lg-block">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn bpig">Add to Cart</a>
                               </div>
                             </div>
 
                             <!-- card 3 -->
-                            <div class="card  col-lg-2 col-md-2 col-sm-3 col-xs-4 df2" style="width: 18rem;">
+                            <div class="card  col-lg-2 col-md-2 col-sm-3 col-4 df2" style="width: 18rem;">
                               <img class="card-img-top" src="img/don/don1.jpg" alt="Card image cap">
                               <div class="card-body">
-                                <h5 class="card-title ff">Donut (Classic)</h5>
-                                <p class="card-text ff3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h5 class="card-title ff col-12">Donut</h5>
+                                <p class="card-text ff3 d-none d-sm-block d-md-none d-lg-block">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn bpig">Add to Cart</a>
                               </div>
                             </div>
@@ -230,8 +217,8 @@
                             <div class="card d-none d-sm-block col-lg-2 col-md-2 col-sm-3" style="width: 18rem;">
                               <img class="card-img-top" src="img/pie/pie1.jpg" alt="Card image cap">
                               <div class="card-body">
-                                <h5 class="card-title ff">Cherry Pie</h5>
-                                <p class="card-text ff3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h5 class="card-title ff col-12">Pie</h5>
+                                <p class="card-text ff3 d-md-none d-lg-block">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn bpig ">Add to Cart</a>
                               </div>
                             </div>
@@ -240,8 +227,8 @@
                             <div class="card d-none d-lg-block d-md-block col-lg-2 col-md-2 " style="width: 18rem;">
                               <img class="card-img-top" src="img/cheese/cheese6.jpg" alt="Card image cap">
                               <div class="card-body">
-                                <h5 class="card-title ff">Lemon Cheescake</h5>
-                                <p class="card-text ff3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h5 class="card-title ff col-12">Cheescake</h5>
+                                <p class="card-text ff3 d-md-none d-lg-block">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn bpig ">Add to Cart</a>
                               </div>
                             </div>
@@ -250,31 +237,31 @@
                             <div class="card d-none d-lg-block d-md-block col-lg-2 col-md-2 " style="width: 18rem;">
                               <img class="card-img-top" src="img/dess/dess1.jpg" alt="Card image cap">
                               <div class="card-body">
-                                <h5 class="card-title ff">Chocolate Dessert </h5>
-                                <p class="card-text ff3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h5 class="card-title ff col-12">Cake </h5>
+                                <p class="card-text ff3 d-md-none d-lg-block">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn bpig ">Add to Cart</a>
                               </div>
                             </div>
                             </div>
 
-                            <h1 class=" ta ff h11 text-white d-none d-sm-block" style="text-decoration: underline;">Soon</h1>
+                            <h1 class=" ta ff h11 text-white " style="text-decoration: underline;">Soon</h1>
                             <div class="h12">
                                   <div class="row">
                                     <!-- card 1 -->
-                                    <div class="card d-none d-sm-block col-lg-3 col-md-3 col-sm-4" style="width: 18rem;">
+                                    <div class="card col-6 d-sm-block col-lg-3 col-md-3 col-sm-4" style="width: 18rem;">
                                       <img class="card-img-top" src="img/breads/baguette.jpg" alt="Card image cap">
                                       <div class="card-body">
                                         <h5 class="card-title ff">French Baguette </h5>
-                                        <p class="card-text ff3">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+                                        <p class="card-text ff3 d-none d-sm-block">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
                                       </div>
                                     </div>
 
                                     <!-- card 2 -->
-                                    <div class="card d-none d-sm-block col-lg-3 col-md-3 col-sm-4" style="width: 18rem;">
+                                    <div class="card col-6 d-sm-block col-lg-3 col-md-3 col-sm-4" style="width: 18rem;">
                                       <img class="card-img-top" src="img/breads/banana.jpg" alt="Card image cap">
                                       <div class="card-body">
                                         <h5 class="card-title ff">Banana Bread </h5>
-                                        <p class="card-text ff3">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+                                        <p class="card-text ff3 d-none d-sm-block">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
                                       </div>
                                     </div>
 
@@ -300,18 +287,18 @@
                             </div>
 
                             <div class="blog">
-                              <h1 class=" ta ff text-black h13 d-none d-sm-block ">Our Blog</h1>
+                              <h1 class=" ta ff text-black h13  ">Our Blog</h1>
                                   <div class="h12">
                                     <div class="row">
                                       <!-- card 1 -->
-                                      <div class="crd col-sm-1 col-md-1 cl-lg-1 "></div>
-                                            <div class="card d-none d-sm-block col-sm-4 col-md-4 cl-lg-4" style="width: 18rem;">
+                                      <div class="crd col-2 col-sm-1 col-md-1 cl-lg-1 "></div>
+                                            <div class="card col-8 col-sm-4 col-md-4 cl-lg-4" style="width: 18rem;">
                                         <img class="card-img-top" src="img/blog/blog1.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="card-title ff">PEANUT <span class="pl-2 pr-2">BUTTER</span> BROWNIES </h5>
-                                          <p class="card-text ff3">These copycat Red Lobster cheddar bay biscuits are made from scratch (no baking mix here!), are buttery, cheesy, light and flaky, and loaded with garlic-herb flavor - even better than the original! They're ready...</p>
-                                          <a href="#" class="btn bpig ">Countinue Reading</a>
-                                          <a href="#" class="btn bpig ">Share</a>
+                                          <p class="card-text ff3 d-none d-lg-block">These copycat Red Lobster cheddar bay biscuits are made from scratch (no baking mix here!), are buttery, cheesy, light and flaky, and loaded with garlic-herb flavor - even better than the original! They're ready...</p>
+                                          <a href="#" class="btn bpig col-lg-7 ">Countinue Reading</a>
+                                          <a href="#" class="btn bpig d-none d-sm-block col-lg-7 d-lg-block mt-2 d-md-none">Share</a>
                                         </div>
                                       </div>
                                       
@@ -322,10 +309,10 @@
                                       <div class="card d-none d-sm-block col-sm-4 col-md-4 cl-lg-4" style="width: 18rem;">
                                         <img class="card-img-top" src="img/blog/blog2.jpg" alt="Card image cap">
                                         <div class="card-body">
-                                          <h5 class="card-title ff">RED <span class="pl-2 pr-2">LOBSTER</span> CHEDDAR <span class="pl-2 pr-2">BAY</span> BISCUITS <span class="pl-2">RECIPE</span></h5>
-                                          <p class="card-text ff3">These copycat Red Lobster cheddar bay biscuits are made from scratch (no baking mix here!), are buttery, cheesy, light and flaky, and loaded with garlic-herb flavor - even better than the original! They're ready...</p>
-                                          <a class="btn bpig ">Countinue Reading</a>
-                                          <a class="btn bpig ">Share</a>
+                                          <h5 class="card-title ff">RED <span class="pl-2 pr-2">LOBSTER</span> CHEDDAR <span class="pl-2 pr-2">RECIPE</span></h5>
+                                          <p class="card-text ff3 d-none d-lg-block">These copycat Red Lobster cheddar bay biscuits are made from scratch (no baking mix here!), are buttery, cheesy, light and flaky, and loaded with garlic-herb flavor - even better than the original! They're ready...</p>
+                                          <a class="btn bpig col-lg-7 ">Countinue Reading</a>
+                                          <a class="btn bpig d-none d-sm-block col-lg-7 d-lg-block mt-2 d-md-none">Share</a>
                                         </div>
                                       </div>
                                     </div>
@@ -340,7 +327,7 @@
 
 
         <!-- footer -->
-        <div class="row1 bbd text-center">
+        <div class="row1 bbd nbt text-center">
           <nav class="navbar navbar-expand-lg navbar-light bg-dark">
           <div class="col-md col-12 font-weight-bold pig"><a class="ff">OUR  LOCATION</a></div>
           <div class="col-md col-12 font-weight-bold pig"><a class="ff">OPENING  HOURS</a></div>
@@ -389,11 +376,11 @@
         <div class="row3">
             <nav class="navbar navbar-expand-lg navbar-light bg-dark nbt">
               
-              <div class="icons col-lg-10  col-md-8 col-xs-12 col-sm-8 tac df">
-                <i class="fa fa-facebook  pl-2 fa-2x pig pl-2" style="float: left;"></i>
-                <i class="fa fa-instagram  pl-2 fa-2x pig pl-2" style="float: left;"></i>
-                <i class="fa fa-twitter  pl-2 fa-2x pig pl-2" style="float: left;"></i>
-                <i class="fa fa-youtube  pl-2 fa-2x pig pl-2" style="float: left;"></i>
+              <div class="icons col-lg-9 col-md-8 col-xs-12 col-sm-8 tac df">
+                <i class="fa fa-facebook pl-2 fa-2x pig pl-2" style="float: left;"></i>
+                <i class="fa fa-instagram pl-2 fa-2x pig pl-2" style="float: left;"></i>
+                <i class="fa fa-twitter pl-2 fa-2x pig pl-2" style="float: left;"></i>
+                <i class="fa fa-youtube pl-2 fa-2x pig pl-2" style="float: left;"></i>
               </div>
 
               <div class="copyright col-lg-2 col-md-4 col-xs-12 col-sm-4 tac ">
@@ -409,5 +396,28 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+          var count = 2;
+          $('.mize').click(function(){
+          count++;
+
+          if(count%2==0){
+            $('.acc').show(1000);
+          }
+          else{
+            $('.acc').hide();
+          }
+
+        })
+
+        
+
+
+
+
+
+
+
+    </script>
   </body>
 </html>
