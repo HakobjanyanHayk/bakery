@@ -151,7 +151,7 @@
               </nav>
               
               <div class="container" style="background-color: white">
-                <h1 class="ff g11 col-9" style=" padding-top: 15px;">Chocolate Cupcake</h1>
+                <h1 class="ff g11 col-12" style=" padding-top: 15px;">Chocolate Cupcake</h1>
                 <!-- right side of product  -->
               <div class="div_product mt-10 ml-20">
 
@@ -183,7 +183,7 @@
                     </div>
                     <div class=" col-1 col-sm-1"></div>
                     <div class="info col-5 col-sm-5">
-                        <h2 class="ff pig bnbn" style="font-size: 40px;">&#36; 14</h2>
+                        <h2 class="ff pig bnbn" style="font-size: 40px;">&#36; <span style="color: #343A40">14</span></h2>
                             <div class="input-group mb-3  pl-0 wid ff" style="display: flex;flex-direction: row;">
                             <div class="input-group-prepend">
                               <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
@@ -431,9 +431,9 @@
           count++;
 
           if(count%2==0){
-            $('.acc').show(1000);
-            $('.arr').show(1000);
-            $('.home').hide(1000);
+            $('.acc').show();
+            $('.arr').show();
+            $('.home').hide();
           }
           else{
             $('.acc').hide();
