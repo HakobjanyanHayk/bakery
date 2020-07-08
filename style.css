@@ -59,9 +59,9 @@ a:hover{
   justify-content: center;
 }
   }
+  /* --------------------------------------------------------------------------------------------------------------- --------------*/
 .content{
   background-color: #f4c2c2;
-  height: 4000px;
 }
 .ed{
   color: #000;
@@ -107,7 +107,7 @@ a:hover{
 .pp{
   position: relative;
   bottom: 260px;
-  color: #f4c2c2;
+  color: #000;
   font-size: 60px;
   font-weight: 200;
   font-family: 'Galada', cursive;
@@ -270,4 +270,33 @@ a:hover{
   display: -o-flex;
   display: flex;
   flex-direction: row;
+}
+.blog{
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.blog_btn{
+  padding: 10px;
+  background-color: #fff;
+  outline:none;
+  border:1px solid black;
+  font-size: 25px;
+}
+.tdd:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+  transition: 0.6s ease-in;
+}   
+iframe{
+  width: 700px;
+  height: 300px;
+}
+.foot{
+  margin-top: 80px;
+}
+.blog a:hover{
+  background-color: #343A40;
+  color: #f4c2c2;
+  transition: 0.7s ease-in;
 }
