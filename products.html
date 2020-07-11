@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/cake.png" type="image" sizes="16x16">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" /><link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Lato&family=Modak&family=Notable&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Bakery</title>
+    <script src="https://kit.fontawesome.com/ba26090dd3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-dark nbt nbb fix">
+    <button class="navbar-toggler bpig mize" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse col-xl-8 col-lg-11 col-md-11" id="menu">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link ff arr" style="color:#f4c2c2" href="index.html"><i class="fas fa-arrow-circle-left"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ff home" style="color:#f4c2c2" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ff" style="color:#f4c2c2" href="products.html">Cupcakes</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link ff" style="color:#f4c2c2" href="#">Cookies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ff" style="color:#f4c2c2" href="#">Donuts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ff" style="color:#f4c2c2" href="#">Pies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ff" style="color:#f4c2c2" href="#">Cheescakes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ff" style="color:#f4c2c2" href="#">Cakes</a>
+        </li>
+      </ul>
+     </div>
+
+
+        <div class=" d-none d-xl-block col-xl-3">
+          <form class="form-inline">
+            <input class=" mr-sm-2 text-dark inp " type="search" placeholder="Search"  aria-label="Search">
+            <button class="btn text-dark my-2 my-sm-0 bpig" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+
+               <!-- col-3 col-md-1 col-sm-2  col-lg-1 -->
+        <div class="dropdown acc">
+          <button class="btn bpig dropdown-toggle text-dark" type="button" id="acc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-alt"></i>
+           </button>
+
+           <div class="dropdown-menu dropdown-menu-right main" aria-labelledby="acc">
+             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#login" >Login</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#register">Register</a>
+             <a class="dropdown-item" href="orders.html">My Orders</a>
+             <a class="dropdown-item" href="account_settings.html">Account Settings</a>
+          </div>
+       </div>
+
+
+
+  </nav>
+
+
+
+
+        <!-- second row end-->
+
+
+
+
+
+<!-- Modal for login -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Pleas Log In</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+      </div>
+
+      <div class="modal-body">
+          <input type="text" class='col-8 m-3 ' style="height: 45px" placeholder="Login">
+          <input type="password" class="form-control col-8 m-3 " style="height: 45px" placeholder="Password">
+
+
+      </div>
+      <div class="modal-footer">
+        <p class=" col-6 align-items-start"><a href="">Forgot your password ?</a></p>
+        <button type="button" class="btn  bpig text-dark col-2" data-dismiss="modal">Login</button>
+        <button type="button" class="btn bpig text-dark col-2">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal for register -->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+      </div>
+
+      <div class="modal-body">
+          <input type="text" class='col-8 m-3 ' style="height: 45px" placeholder="Login">
+          <input type="password" class="form-control col-8 m-3 " style="height: 45px" placeholder="Password">
+          <input type="password" class="form-control col-8 m-3 " style="height: 45px" placeholder="Repeat Password">
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn bpig text-dark " data-dismiss="modal">Next</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- header end -->
+
+<!-- path -->
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Cupcakes</a></li>
+
+                </ol>
+              </nav>
+
+              <!-- add sort by -->
+
+              <div class="container" style="background-color: white">
+                  <h1 class="ta ff cupo" style="font-size:60px;padding-top: 10px;color:#343A40;">Cupcakes</h1>
+                  <div class="row">
+                    <div class="sidebar col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="height:500px">
+                            <div class="accordion" id="accordionExample">
+
+                              <!-- first -->
+                              <div class="card" style="padding: 0">
+                                <div class="card-header coal btn-block text-left ff pig" id="headingOne" style="font-size:  40px; padding:10px 3px 10px;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                  <h2 class="mb-0 colla">
+                                    Cream Types
+                                  </h2>
+                                </div>
+
+                                <div id="collapseTwo" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                      <div class="choose ff1 ">
+                                        <input type="checkbox"> Swiss Meringue Buttercream
+                                      </div>
+                                      <div class="choose ff1 ">
+                                        <input type="checkbox"> Cream Cheese Frosting
+                                      </div>
+
+                                      <div class="choose ff1">
+                                        <input type="checkbox"> Italian Meringue Buttercream
+                                      </div>
+                                      <div class="choose ff1">
+                                        <input type="checkbox"> French Meringue Buttercream
+                                      </div>
+                                      <div class="choose ff1">
+                                        <input type="checkbox">  Ganache
+                                      </div>
+                                      <div class="choose ff1">
+                                        <input type="checkbox">  Whipped Cream
+                                      </div>
+                                      <div class="choose ff1">
+                                        <input type="checkbox">  Chocolate Cream with Nuts
+                                      </div>
+                                      <div class="choose ff1">
+                                        <input type="checkbox">  Vanilla Cream with Nuts
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                               <!-- second -->
+                              <div class="card"  style="padding: 0">
+                                <div class="card-header coal btn-block text-left ff pig" id="headingOne" style="font-size: 40px; padding:10px 3px 10px;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  <h2 class="mb-0 colla">
+                                    Cupcake Sizes
+                                  </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                      <div class="choose ff1 ">
+                                        <input type="checkbox"> 30x30
+                                      </div>
+                                      <div class="choose ff1 ">
+                                        <input type="checkbox"> 40x40
+                                      </div>
+
+                                      <div class="choose ff1">
+                                        <input type="checkbox"> 60x60
+                                      </div>
+                                      <div class="choose ff1">
+                                        <input type="checkbox"> 80x80
+                                      </div>
+                                      <div class="choose ff1">
+                                        <input type="checkbox">  100x100
+                                      </div>
+                                      <div class="choose ff1">
+                                        <input type="checkbox">  120x120
+                                      </div>
+                                      <div class="choose ff1">
+                                        <input type="checkbox">  150x150
+                                      </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- third -->
+                                    <div class="card"  style="padding: 0">
+                                <div class="card-header coal btn-block text-left ff pig" id="headingOne" style="font-size: 40px; padding:10px 3px 10px;" data-toggle="collapse" data-target="#sortby" aria-expanded="true" aria-controls="collapseOne">
+                                  <h2 class="mb-0 colla">
+                                    Sort By
+                                  </h2>
+                                </div>
+
+                                <div id="sortby" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                      <div class="choose ff1 ">
+                                        <input type="checkbox"> Price:Low to High
+                                      </div>
+                                      <div class="choose ff1 ">
+                                        <input type="checkbox">Price:High to Low
+                                      </div>
+
+                                      <div class="choose ff1">
+                                        <input type="checkbox">Rating:Low to High
+                                      </div>
+                                      <div class="choose ff1">
+                                        <input type="checkbox">Rating:High to Low
+                                      </div>
+
+
+
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- fourth -->
+                                  <div class="card"  style="padding: 0">
+                                <div class="card-header coal btn-block text-left ff pig" id="headingOne" style="font-size: 40px; padding:10px 3px 10px;" data-toggle="collapse" data-target="#time" aria-expanded="true" aria-controls="collapseOne">
+                                  <h2 class="mb-0 colla">
+                                    Time
+                                  </h2>
+                                </div>
+
+                                <div id="time" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                      <div class="choose ff1 ">
+                                        <input type="checkbox"> Less Than 20 min.
+                                      </div>
+                                      <div class="choose ff1 ">
+                                        <input type="checkbox">Less Than 15 min.
+                                      </div>
+
+                                      <div class="choose ff1">
+                                        <input type="checkbox"> Less Than 10 min.
+                                      </div>
+                                      <div class="choose ff1">
+                                        <input type="checkbox"> Less Than 7 min.
+                                      </div>
+                                      <div class="choose ff1">
+                                        <input type="checkbox">  Less Than 4 min.
+                                      </div>
+
+
+                                  </div>
+                                </div>
+                              </div>
+                               <!-- fiveth -->
+                              <div class="card"  style="padding: 0">
+                                <div class="card-header coal btn-block text-left ff pig" id="headingOne" style="font-size: 40px; padding:10px 3px 10px;  " data-toggle="collapse" data-target="#collapseThird" aria-expanded="true" aria-controls="collapseOne">
+                                  <h2 class="mb-0 colla">
+                                    Price
+                                  </h2>
+                                </div>
+
+                                <div id="collapseThird" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                      <div class="choose ff1 ">
+                                        <input type="checkbox"> &#36; 1-3
+                                      </div>
+                                      <div class="choose ff1 ">
+                                        <input type="checkbox">  &#36; 3-5
+                                      </div>
+
+                                      <div class="choose ff1">
+                                        <input type="checkbox">  &#36; 5-7
+                                      </div>
+                                      <div class="choose ff1">
+                                        <input type="checkbox">  &#36; 7-9
+                                      </div>
+                                      <div class="choose ff1">
+                                        <input type="checkbox">  &#36; 9-11
+                                      </div>
+                                      <div class="choose ff1">
+                                        <input type="checkbox">   &#36; 11-13
+                                      </div>
+                                      <div class="choose ff1">
+                                        <input type="checkbox">   &#36; 14-16
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                    </div>
+
+                    <div class="products_container col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+                          <div class="row">
+                                <!-- card 1 -->
+                            <div class="card col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 df2">
+                              <a href="single.html"><img class="card-img-top" src="img/cup/cup1_1.jpg" alt="Card image cap"></a>
+                              <div class="card-body">
+                                <h5 class="card-title ff col-12 ooo medd">Chocolate Cupcake</h5>
+                                <p class="card-text ff3 d-none d-lg-block">Some quick example text to build on the card title </p>
+                                <a href="#" class="btn bpig med" style="padding:5px">Add to Cart</a>
+                              </div>
+                            </div>
+
+                            <!-- -->
+
+                            <!-- card 2 -->
+                            <div class="card col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 df2">
+                              <img class="card-img-top" src="img/cup/cup1_2.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title ff col-12 ooo medd">Fruit Cupcake</h5>
+                                <p class="card-text ff3 d-none d-lg-block">Some quick example text to build on the card title </p>
+                                <a href="#" class="btn bpig med " style="padding:5px">Add to Cart</a>
+                              </div>
+                            </div>
+                            <!--  -->
+
+                            <!-- card 2 -->
+                            <div class="card col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 df2">
+                              <img class="card-img-top" src="img/cup/cup1_3.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title ff col-12 ooo medd">Vanilla Cupcake</h5>
+                                <p class="card-text ff3 d-none d-lg-block">Some quick example text to build on the card title </p>
+                                <a href="#" class="btn bpig med" style="padding:5px">Add to Cart</a>
+                              </div>
+                            </div>
+
+
+
+                          </div>
+                           <!-- second row -->
+                           <div class="row" style="margin-top: 25px;">
+                                <!-- card 1 -->
+                            <div class="card col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 df2">
+                              <img class="card-img-top" src="img/cup/cup1_8.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title ff col-12 ooo medd">Raspberry Cupcake</h5>
+                                <p class="card-text ff3 d-none d-lg-block">Some quick example text to build on the card title </p>
+                                <a href="#" class="btn bpig med" style="padding:5px">Add to Cart</a>
+                              </div>
+                            </div>
+
+                            <!-- -->
+
+                            <!-- card 2 -->
+                            <div class="card col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 df2">
+                              <img class="card-img-top" src="img/cup/cup1.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title ff col-12 ooo medd">Strawberry Cupcake</h5>
+                                <p class="card-text ff3 d-none d-lg-block">Some quick example text to build on the card title </p>
+                                <a href="#" class="btn bpig med" style="padding:5px">Add to Cart</a>
+                              </div>
+                            </div>
+                            <!--  -->
+
+                            <!-- card 2 -->
+                            <div class="card col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 df2">
+                              <img class="card-img-top" src="img/cup/cup1_4.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title ff col-12 ooo medd">Lemon Cupcake</h5>
+                                <p class="card-text ff3 d-none d-lg-block">Some quick example text to build on the card title </p>
+                                <a href="#" class="btn bpig med" style="padding:5px">Add to Cart</a>
+                              </div>
+                            </div>
+
+
+
+                          </div>
+
+                          <!-- third row -->
+
+                         <div class="row" style="margin-top: 25px;padding-bottom: 20px;">
+                                <!-- card 1 -->
+                            <div class="card col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 df2">
+                              <img class="card-img-top" src="img/cup/cup1_5.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title ff col-12 ooo medd">Oreo Cupcake</h5>
+                                <p class="card-text ff3 d-none d-lg-block">Some quick example text to build on the card title </p>
+                                <a href="#" class="btn bpig med" style="padding:5px">Add to Cart</a>
+                              </div>
+                            </div>
+
+                            <!-- -->
+
+                            <!-- card 2 -->
+                            <div class="card col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 df2">
+                              <img class="card-img-top" src="img/cup/cup1_6.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title ff col-12 ooo medd">Latte Cupcake</h5>
+                                <p class="card-text ff3 d-none d-lg-block">Some quick example text to build on the card title </p>
+                                <a href="#" class="btn bpig med" style="padding:5px">Add to Cart</a>
+                              </div>
+                            </div>
+                            <!--  -->
+
+                            <!-- card 2 -->
+                            <div class="card col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 df2">
+                              <img class="card-img-top" src="img/cup/cup1_7.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title ff col-12 ooo medd">Walnut Cupcake</h5>
+                                <p class="card-text ff3 d-none d-lg-block">Some quick example text to build on the card title </p>
+                                <a href="#" class="btn bpig med" style="padding:5px">Add to Cart</a>
+                              </div>
+                            </div>
+
+
+
+                          </div>
+
+                          <!-- third row end-->
+                    </div>
+                  </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer -->
+ <div class="row1 bbd nbt text-center foot">
+          <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+          <div class="col-md col-12 font-weight-bold pig"><a class="ff">OUR  LOCATION</a></div>
+          <div class="col-md col-12 font-weight-bold pig"><a class="ff">OPENING  HOURS</a></div>
+          <div class="col-md col-12 font-weight-bold pig"><a class="ff">USEFUL <span class="pl-2">LINKS</span></a></div>
+          <div class="col-md col-12 font-weight-bold pig"><a class="ff">PAYMENT<span class="pl-2"> METHODS</span></a></div>
+
+          </nav>
+        </div>
+
+        <div class="row2 d-sm-none d-none d-md-block d-lg-block ">
+          <nav class="navbar navbar-expand-lg navbar-light bg-dark nbt">
+              <div class="nav-item col-md">
+
+                  <p class="ta gr ff1">19th Paradise Street Sitia</p>
+                  <p class="ta gr ff1">128 Meserole Avenue</p>
+
+              </div>
+
+              <div class="nav-item col-md">
+
+                  <p class="ta gr ff1"><span class="sp">Mon-Thu:</span> 7:00am-8:00pm</p>
+                  <p class="ta gr ff1"><span class="sp">Fri-Sun:</span> 7:00am-10:00pm</p>
+
+              </div>
+
+              <div class="nav-item col-md">
+
+                  <p class="ta gr ff1">Your Account</p>
+                  <p class="ta gr ff1">Shipping Rates</p>
+                  <p class="ta gr ff1">Help</p>
+              </div>
+
+              <div class="nav-item col-md">
+
+                  <p class="ta gr ff1"><i class="fab fa-cc-amex "></i></p>
+                  <p class="ta gr ff1"><i class="fab fa-cc-paypal "></i></p>
+                  <p class="ta gr ff1"><i class="fab fa-cc-visa "></i></p>
+              </div>
+
+
+
+
+          </nav>
+        </div>
+
+        <div class="row3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark nbt">
+
+              <div class="icons col-lg-9 col-md-8 col-xs-12 col-sm-8 tac df">
+                <i class="fa fa-facebook pl-2 fa-2x pig pl-2" style="float: left;"></i>
+                <i class="fa fa-instagram pl-2 fa-2x pig pl-2" style="float: left;"></i>
+                <i class="fa fa-twitter pl-2 fa-2x pig pl-2" style="float: left;"></i>
+                <i class="fa fa-youtube pl-2 fa-2x pig pl-2" style="float: left;"></i>
+              </div>
+
+              <div class="copyright col-lg-2 col-md-4 col-xs-12 col-sm-4 tac ">
+                <h4 class="ff"><i class="fas fa-copyright ff pig mt-2"><span class="ff">Hakobjanyan</span></i></h4>
+              </div>
+            </nav>
+        </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+
+    <script>
+        var count = 2;
+           $('.home').hide();
+          $('.mize').click(function(){
+          count++;
+
+          if(count%2==0){
+            $('.acc').show();
+            $('.arr').show();
+            $('.home').hide();
+          }
+          else{
+            $('.acc').hide();
+            $('.arr').hide();
+            $('.home').show();
+          }
+
+        })
+
+
+          $(window).resize(function() {
+            var medd = $('.medd') ;
+
+            if($(window).width() <= 1200 && $(window).width() >992 ) {
+            $('.med').css('font-size' , '16px');
+
+          }
+          if($(window).width() <= 992 && $(window).width() >768 ) {
+             $('.med').css('font-size' , '13px');
+          }
+          if($(window).width() <= 520 ){
+            $('.med').css('font-size' , '11px');
+          }
+          if($(window).width() <= 360 ){
+          $('.med').css('font-size' , '9px')
+        }
+
+        if($(window).width() >767   ) {
+            // if larger or equal
+          var cup = $('.cupo');
+          cup.css('font-size' , '60px');
+          var collapse = $('.colla');
+          collapse.css('font-size' , '32px');
+          var choose = $('.choose');
+          choose.css('font-size' , '25px');
+          $('.medd').css('font-size' , '25px');
+           //working !!!!!
+        }
+
+        if($(window).width() <= 767  && $(window).width() >482 ) {
+            // if larger or equal
+          var cup = $('.cupo');
+          cup.css('font-size' , '50px');
+          var collapse = $('.colla');
+          collapse.css('font-size' , '25px');
+          var choose = $('.choose');
+          choose.css('font-size' , '20px');
+          $('.medd').css('font-size' , '22px');
+           //working !!!!!
+        }
+
+        if($(window).width() <= 482 && $(window).width() >416) {
+            // if larger or equal
+          var collapse = $('.colla');
+          collapse.css('font-size' , '20px');
+          var cup = $('.cupo');
+          cup.css('font-size' , '40px');
+          var choose = $('.choose');
+          choose.css('font-size' , '15px');
+          $('.medd').css('font-size' , '18px');
+           //working !!!!!
+        }
+        if($(window).width() <= 416 && $(window).width() >319) {
+            // if larger or equal
+          var collapse = $('.colla');
+          collapse.css('font-size' , '12px');
+          var choose = $('.choose');
+          choose.css('font-size' , '13px');
+          var cup = $('.cupo');
+          cup.css('font-size' , '25px');
+          $('.medd').css('font-size' , '15px');
+
+           //working !!!!!
+        }
+
+
+
+         }).resize(); // This will simulate a resize to trigger the initial run.
+    </script>
+  </body>
+</html>

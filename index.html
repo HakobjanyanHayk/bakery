@@ -5,14 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="img/cake.png" type="image" sizes="16x16">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Galada&family=Lato&family=Modak&family=Notable&family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Bakery</title>
-    <script src="https://kit.fontawesome.com/ba26090dd3.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
 
@@ -21,11 +22,11 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse col-md-11 col-lg-9" id="menu">
+    <div class="collapse navbar-collapse col-xl-8 col-lg-11 col-md-11" id="menu">
       <ul class="navbar-nav mr-auto">
-        
+
         <li class="nav-item">
-          <a class="nav-link ff" style="color:#f4c2c2" href="#">Cupcakes</a>
+          <a class="nav-link ff" style="color:#f4c2c2" href="products.html">Cupcakes</a>
         </li>
 
         <li class="nav-item">
@@ -44,36 +45,36 @@
           <a class="nav-link ff" style="color:#f4c2c2" href="#">Cakes</a>
         </li>
       </ul>
-     </div>   
-        <div class="d-none d-lg-block">
+     </div>
+        <div class="d-none d-xl-block col-xl-3" >
           <form class="form-inline">
             <input class=" mr-sm-2 text-dark inp " type="search" placeholder="Search"  aria-label="Search">
             <button class="btn text-dark my-2 my-sm-0 bpig" type="submit"><i class="fas fa-search"></i></button>
           </form>
         </div>
 
-               
-        <div class="dropdown  col-3 col-md-1 col-sm-2  col-lg-1 acc">
+
+        <div class="dropdown  col-3  col-lg-1 col-xl-1 col-md-1 col-sm-2  acc" style="padding-left: 20px;">
           <button class="btn bpig dropdown-toggle text-dark" type="button" id="acc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user-alt"></i>
            </button>
 
-           <div class="dropdown-menu main" aria-labelledby="acc">
+           <div class="dropdown-menu dropdown-menu-right main" aria-labelledby="acc">
              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#login" >Login</a>
             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#register">Register</a>
-             <a class="dropdown-item" href="#">Cart</a>
-             <a class="dropdown-item" href="#">Account Setting</a>
+             <a class="dropdown-item" href="orders.html">My Orders</a>
+             <a class="dropdown-item" href="account_settings.html">Account Settings</a>
           </div>
        </div>
-               
 
-    
+
+
   </nav>
 
 
 
-          
-        <!-- second row end-->  
+
+        <!-- second row end-->
 
 
 
@@ -119,13 +120,13 @@
           <input type="text" class='col-8 m-3 ' style="height: 45px" placeholder="Login">
           <input type="password" class="form-control col-8 m-3 " style="height: 45px" placeholder="Password">
           <input type="password" class="form-control col-8 m-3 " style="height: 45px" placeholder="Repeat Password">
-          
+
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn bpig text-dark " data-dismiss="modal">Next</button>
-        
-      </div> 
+
+      </div>
     </div>
   </div>
 </div>
@@ -177,12 +178,12 @@
                           <span class="sr-only">Next</span>
                         </a>
                       </div>
-                      <h1 class="ta ff text-black h11 best" style="text-decoration: underline;">Bestsellers</h1>
+                      <h1 class="ta ff text-black h11 best" style="text-decoration: underline;color:#343A40;">Bestsellers</h1>
 
                       <div class="container-fluid h12" >
                         <div class="row">
                             <!-- card 1 -->
-                            
+
                               <div class="card col-lg-2 col-md-2 col-sm-3 col-4 df2" style="width: 18rem;">
                                 <a href="single.html"><img class="card-img-top" src="img/cup/cup1_1.jpg" alt="Card image cap" > </a>
                                 <div class="card-body">
@@ -191,7 +192,7 @@
                                   <a href="#" class="btn bpig">Add to Cart</a>
                                 </div>
                               </div>
-                            
+
 
                             <!-- card 2 -->
                             <div class="card col-lg-2 col-md-2 col-sm-3 col-4 df2" style="width: 18rem;">
@@ -252,7 +253,7 @@
                                       <img class="card-img-top" src="img/breads/baguette.jpg" alt="Card image cap">
                                       <div class="card-body">
                                         <h5 class="card-title ff">French Baguette </h5>
-                                        <p class="card-text ff3 d-none d-sm-block">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title</p> 
+                                        <p class="card-text ff3 d-none d-sm-block">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title</p>
                                       </div>
                                     </div>
 
@@ -261,7 +262,7 @@
                                       <img class="card-img-top" src="img/breads/banana.jpg" alt="Card image cap">
                                       <div class="card-body">
                                         <h5 class="card-title ff">Banana Bread </h5>
-                                        <p class="card-text ff3 d-none d-sm-block">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title</p> 
+                                        <p class="card-text ff3 d-none d-sm-block">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title</p>
                                       </div>
                                     </div>
 
@@ -270,7 +271,7 @@
                                       <img class="card-img-top" src="img/breads/barbari.jpg" alt="Card image cap">
                                       <div class="card-body">
                                         <h5 class="card-title ff">Barbari Bread </h5>
-                                        <p class="card-text ff3">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title</p> 
+                                        <p class="card-text ff3">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title</p>
                                       </div>
                                     </div>
 
@@ -280,16 +281,16 @@
                                       <img class="card-img-top" src="img/breads/potato.jpg" alt="Card image cap">
                                       <div class="card-body">
                                         <h5 class="card-title ff">Potato bread</h5>
-                                        <p class="card-text ff3">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title</p> 
+                                        <p class="card-text ff3">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title</p>
                                       </div>
                                     </div>
                                   </div>
                             </div>
 
-                            <div class="blog">
-                              <h1 class=" ta ff text-black h13  " style="text-decoration: underline;margin-bottom: 20px;">Our Blog</h1>
+                            <div class="blog" >
+                              <h1 class=" ta ff text-black h13  " style="text-decoration: underline;margin-bottom: 20px;color:#343A40;">Our Blog</h1>
                                   <div class="h12">
-                                    <div class="row">
+                                    <div class="row " style="margin-bottom: 10px">
                                       <!-- card 1 -->
                                       <div class="crd col-1 col-sm-1 col-md-1 cl-lg-1 "></div>
                                             <div class="card col-12 col-sm-3 col-md-3 cl-lg-3" style="width: 18rem;">
@@ -301,7 +302,7 @@
                                           <a href="#" class="btn bpig d-none mt-2 d-xl-block col-xl-3" style="font-weight: 600;">Share</a>
                                         </div>
                                       </div>
-                                      
+
 
 
                                       <div class="crd col-sm-1 col-md-1 cl-lg-1 "></div>
@@ -347,41 +348,41 @@
           <div class="col-md col-12 font-weight-bold pig"><a class="ff">OPENING  HOURS</a></div>
           <div class="col-md col-12 font-weight-bold pig"><a class="ff">USEFUL <span class="pl-2">LINKS</span></a></div>
           <div class="col-md col-12 font-weight-bold pig"><a class="ff">PAYMENT<span class="pl-2"> METHODS</span></a></div>
-           
+
           </nav>
         </div>
 
         <div class="row2 d-sm-none d-none d-md-block d-lg-block ">
           <nav class="navbar navbar-expand-lg navbar-light bg-dark nbt">
               <div class="nav-item col-md">
-                
+
                   <p class="ta gr ff1">19th Paradise Street Sitia</p>
                   <p class="ta gr ff1">128 Meserole Avenue</p>
-                  
+
               </div>
 
               <div class="nav-item col-md">
-                
+
                   <p class="ta gr ff1"><span class="sp">Mon-Thu:</span> 7:00am-8:00pm</p>
                   <p class="ta gr ff1"><span class="sp">Fri-Sun:</span> 7:00am-10:00pm</p>
-                  
+
               </div>
 
               <div class="nav-item col-md">
-                
+
                   <p class="ta gr ff1">Your Account</p>
                   <p class="ta gr ff1">Shipping Rates</p>
                   <p class="ta gr ff1">Help</p>
               </div>
 
               <div class="nav-item col-md">
-                
+
                   <p class="ta gr ff1"><i class="fab fa-cc-amex "></i></p>
                   <p class="ta gr ff1"><i class="fab fa-cc-paypal "></i></p>
                   <p class="ta gr ff1"><i class="fab fa-cc-visa "></i></p>
               </div>
 
-              
+
 
 
           </nav>
@@ -389,7 +390,7 @@
 
         <div class="row3">
             <nav class="navbar navbar-expand-lg navbar-light bg-dark nbt">
-              
+
               <div class="icons col-lg-9 col-md-8 col-xs-12 col-sm-8 tac df">
                 <i class="fa fa-facebook pl-2 fa-2x pig pl-2" style="float: left;"></i>
                 <i class="fa fa-instagram pl-2 fa-2x pig pl-2" style="float: left;"></i>
@@ -398,18 +399,19 @@
               </div>
 
               <div class="copyright col-lg-2 col-md-4 col-xs-12 col-sm-4 tac ">
-                <h4 class="ff"><i class="fas fa-copyright ff pig mt-2"><span class="ff">Hakobjanyan</span></i></h4> 
+                <h4 class="ff"><i class="fas fa-copyright ff pig mt-2"><span class="ff">Hakobjanyan</span></i></h4>
               </div>
             </nav>
         </div>
 
-      
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ba26090dd3.js" crossorigin="anonymous"></script>
     <script>
           var count = 2;
           $('.mize').click(function(){
@@ -424,7 +426,7 @@
 
         })
 
-        
+
 
 
 
