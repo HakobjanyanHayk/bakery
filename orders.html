@@ -281,10 +281,10 @@
 
 <div class="row1 bbd nbt text-center foot">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <div class="col-md col-12 font-weight-bold pig"><a class="ff">OUR  LOCATION</a></div>
-        <div class="col-md col-12 font-weight-bold pig"><a class="ff">OPENING  HOURS</a></div>
-        <div class="col-md col-12 font-weight-bold pig"><a class="ff">USEFUL <span class="pl-2">LINKS</span></a></div>
-        <div class="col-md col-12 font-weight-bold pig"><a class="ff">PAYMENT<span class="pl-2"> METHODS</span></a></div>
+        <div class="col-md col-12 font-weight-bold pig"><a class="ff fr">OUR  LOCATION</a></div>
+        <div class="col-md col-12 font-weight-bold pig"><a class="ff fr">OPENING  HOURS</a></div>
+        <div class="col-md col-12 font-weight-bold pig"><a class="ff fr">USEFUL <span class="pl-2">LINKS</span></a></div>
+        <div class="col-md col-12 font-weight-bold pig"><a class="ff fr">PAYMENT<span class="pl-2"> METHODS</span></a></div>
 
     </nav>
 </div>
@@ -329,14 +329,14 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-dark nbt">
 
         <div class="icons col-lg-9 col-md-8 col-xs-12 col-sm-8 tac df">
-            <i class="fa fa-facebook pl-2 fa-2x pig pl-2" style="float: left;"></i>
-            <i class="fa fa-instagram pl-2 fa-2x pig pl-2" style="float: left;"></i>
-            <i class="fa fa-twitter pl-2 fa-2x pig pl-2" style="float: left;"></i>
-            <i class="fa fa-youtube pl-2 fa-2x pig pl-2" style="float: left;"></i>
+            <i class="fa fr fa-facebook pl-2 fa-2x pig pl-2" style="float: left;"></i>
+            <i class="fa fr fa-instagram pl-2 fa-2x pig pl-2" style="float: left;"></i>
+            <i class="fa fr fa-twitter pl-2 fa-2x pig pl-2" style="float: left;"></i>
+            <i class="fa fr fa-youtube pl-2 fa-2x pig pl-2" style="float: left;"></i>
         </div>
 
         <div class="copyright col-lg-2 col-md-4 col-xs-12 col-sm-4 tac ">
-            <h4 class="ff"><i class="fas fa-copyright ff pig mt-2"><span class="ff">Hakobjanyan</span></i></h4>
+            <h4 class="ff fr"><i class="fas fr fa-copyright ff pig mt-2"><span class="ff fr">Hakobjanyan</span></i></h4>
         </div>
     </nav>
 </div>
@@ -449,6 +449,27 @@
             $('.ord').css('font-size' , '30px');
             $('.rec').css('font-size' , '30px');
         }
+        if($(window).width() > 1200 ) {
+            $('.fr').css('font-size' , '25px');
+            $('.gr').css('font-size' , '30px');
+         }
+        if($(window).width() <= 1200 && $(window).width() >992 ) {
+            $('.fr').css('font-size' , '25px');
+            $('.gr').css('font-size' , '30px');
+        }
+        // This will fire each time the window is resized:
+        if($(window).width() <= 992 && $(window).width() >756 ) {
+            $('.fr').css('font-size' , '20px');
+            $('.gr').css('font-size' , '25px');
+        }
+        if($(window).width() <= 756 ){
+            $('.fr').css('font-size' , '25px');
+            $('.gr').css('font-size' , '30px');
+        } 
+        if($(window).width() <= 600 ){
+            $('.fr').css('font-size' , '20px');
+            $('.gr').css('font-size' , '25px');
+        } 
 
     }).resize(); // This will simulate a resize to trigger the initial run.
 

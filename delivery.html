@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/cake.png" type="image" sizes="16x16">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" /><link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Lato&family=Modak&family=Notable&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Bakery</title>
+    <script src="https://kit.fontawesome.com/ba26090dd3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-dark nbt nbb fix">
+    <button class="navbar-toggler bpig mize" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse col-xl-8 col-lg-11 col-md-11" id="menu">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link ff arr" style="color:#f4c2c2" href="checkout.html"><i class="fas fa-arrow-circle-left"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ff home" style="color:#f4c2c2" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ff" style="color:#f4c2c2" href="products.html">Cupcakes</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link ff" style="color:#f4c2c2" href="#">Cookies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ff" style="color:#f4c2c2" href="#">Donuts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ff" style="color:#f4c2c2" href="#">Pies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ff" style="color:#f4c2c2" href="#">Cheescakes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ff" style="color:#f4c2c2" href="#">Cakes</a>
+        </li>
+      </ul>
+     </div>
+
+
+        <div class=" d-none d-xl-block col-xl-3">
+          <form class="form-inline">
+            <input class=" mr-sm-2 text-dark inp " type="search" placeholder="Search"  aria-label="Search">
+            <button class="btn text-dark my-2 my-sm-0 bpig" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+
+               <!-- col-3 col-md-1 col-sm-2  col-lg-1 -->
+        <div class="dropdown acc">
+          <button class="btn bpig dropdown-toggle text-dark" type="button" id="acc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-alt"></i>
+           </button>
+
+           <div class="dropdown-menu dropdown-menu-right main" aria-labelledby="acc">
+             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#login" >Login</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#register">Register</a>
+             <a class="dropdown-item" href="orders.html">My Orders</a>
+             <a class="dropdown-item" href="account_settings.html">Account Settings</a>
+          </div>
+       </div>
+
+
+
+  </nav>
+
+
+
+
+        <!-- second row end-->
+
+
+
+
+
+<!-- Modal for login -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Pleas Log In</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+      </div>
+
+      <div class="modal-body">
+          <input type="text" class='col-8 m-3 ' style="height: 45px" placeholder="Login">
+          <input type="password" class="form-control col-8 m-3 " style="height: 45px" placeholder="Password">
+
+
+      </div>
+      <div class="modal-footer">
+        <p class=" col-6 align-items-start"><a href="">Forgot your password ?</a></p>
+        <button type="button" class="btn  bpig text-dark col-2" data-dismiss="modal">Login</button>
+        <button type="button" class="btn bpig text-dark col-2">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal for register -->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+      </div>
+
+      <div class="modal-body">
+          <input type="text" class='col-8 m-3 ' style="height: 45px" placeholder="Login">
+          <input type="password" class="form-control col-8 m-3 " style="height: 45px" placeholder="Password">
+          <input type="password" class="form-control col-8 m-3 " style="height: 45px" placeholder="Repeat Password">
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn bpig text-dark " data-dismiss="modal">Next</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- header end -->
+
+<div class="container">
+  <div class="delivery" style="height: 400px">
+                        <h1 class="ff ord">Shipping</h1>
+                          <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label bbnn" for="exampleRadios1">
+                              <p class="pi"><span>Free Delivery:</span>  &#36; 0.00 / Delivery in 7 to 14 Business Days</p>
+                            </label>
+                          </div>
+
+                          <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+                            <label class="form-check-label bbnn" for="exampleRadios1">
+                              <p class="pi"><span>Standard Dekivery:</span> &#36; 7.99 / Delivery in 4   to 7 Business Days</p>
+                            </label>
+                          </div>
+
+                           <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+                            <label class="form-check-label bbnn" for="exampleRadios1">
+                              <p class="pi"><span>Express Delivery:</span> &#36; 29.99 / Delivery in 1 Business Day</p>
+                            </label>
+                          </div>
+
+
+                          <div class="row">
+          <div class="col-7 col-sm-9 col-md-9 col-lg-9 col-xl-10"></div>
+          <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+            <a href="payment.html"><button class="bhn btn ff">Countinue <i class="fas fa-arrow-circle-right"></i></button></a>
+          </div>
+        </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer start -->
+<div class="row1 bbd nbt text-center foot">
+          <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+          <div class="col-md col-12 font-weight-bold pig"><a class="ff fr ">OUR  LOCATION</a></div>
+          <div class="col-md col-12 font-weight-bold pig"><a class="ff fr ">OPENING  HOURS</a></div>
+          <div class="col-md col-12 font-weight-bold pig"><a class="ff fr ">USEFUL <span class="pl-2">LINKS</span></a></div>
+          <div class="col-md col-12 font-weight-bold pig"><a class="ff fr ">PAYMENT<span class="pl-2"> METHODS</span></a></div>
+
+          </nav>
+        </div>
+
+        <div class="row2 d-sm-none d-none d-md-block d-lg-block ">
+          <nav class="navbar navbar-expand-lg navbar-light bg-dark nbt">
+              <div class="nav-item col-md">
+
+                  <p class="ta gr ff1">19th Paradise Street Sitia</p>
+                  <p class="ta gr ff1">128 Meserole Avenue</p>
+
+              </div>
+
+              <div class="nav-item col-md">
+
+                  <p class="ta gr ff1"><span class="sp">Mon-Thu:</span> 7:00am-8:00pm</p>
+                  <p class="ta gr ff1"><span class="sp">Fri-Sun:</span> 7:00am-10:00pm</p>
+
+              </div>
+
+              <div class="nav-item col-md">
+
+                  <p class="ta gr ff1">Your Account</p>
+                  <p class="ta gr ff1">Shipping Rates</p>
+                  <p class="ta gr ff1">Help</p>
+              </div>
+
+              <div class="nav-item col-md">
+
+                  <p class="ta gr ff1"><i class="fab fa-cc-amex "></i></p>
+                  <p class="ta gr ff1"><i class="fab fa-cc-paypal "></i></p>
+                  <p class="ta gr ff1"><i class="fab fa-cc-visa "></i></p>
+              </div>
+
+
+
+
+          </nav>
+        </div>
+
+        <div class="row3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark nbt">
+
+              <div class="icons col-lg-9 col-md-8 col-xs-12 col-sm-8 tac df">
+                <i class="fa fr  fa-facebook pl-2 fa-2x pig pl-2" style="float: left;"></i>
+                <i class="fa fr  fa-instagram pl-2 fa-2x pig pl-2" style="float: left;"></i>
+                <i class="fa fr  fa-twitter pl-2 fa-2x pig pl-2" style="float: left;"></i>
+                <i class="fa fr  fa-youtube pl-2 fa-2x pig pl-2" style="float: left;"></i>
+              </div>
+
+              <div class="copyright col-lg-2 col-md-4 col-xs-12 col-sm-4 tac ">
+                <h4 class="ff fr "><i class="fas fr  fa-copyright ff pig mt-2"><span class="ff fr ">Hakobjanyan</span></i></h4>
+              </div>
+            </nav>
+        </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+    <script>
+          var count = 2;
+           $('.home').hide();
+          $('.mize').click(function(){
+          count++;
+
+          if(count%2==0){
+            $('.acc').show();
+            $('.arr').show();
+            $('.home').hide();
+          }
+          else{
+            $('.acc').hide();
+            $('.arr').hide();
+            $('.home').show();
+          }
+
+        })
+
+        $('[data-fancybox="preview"]').fancybox({
+  thumbs : {
+    autoStart : true
+  }
+});
+
+
+
+            $(window).resize(function() {
+        if($(window).width() <= 360 ){
+            $('td').css('padding' , '8');
+            $('tr').css('padding' , '8');
+            $('th').css('padding' , '8');
+            $('.tt').css('padding-top' , '0');
+            $('.tty').css('padding-right' , '4px');
+        }
+        else{
+            $('td').css('padding' , '12');
+            $('tr').css('padding' , '12');
+            $('th').css('padding' , '12');
+            $('.tt').css('padding-top' , '0');
+            $('.tty').css('padding-right' , '12px');
+
+        }
+        //----------------------------------------------------
+         if($(window).width() > 1200 ) {
+            $('.ord').css('font-size' , '60px');
+            $('.pi').css('font-size' , '25px');
+         }
+        if($(window).width() <= 1200 && $(window).width() >992 ) {
+            $('.cb').css('font-size' , '25px');
+            $('.cvv').css('font-size' , '16px');
+            $('.wis').css('font-size' , '40px');
+            $('.ord').css('font-size' , '40px');
+            $('.rec').css('font-size' , '40px');
+            $('.pi').css('font-size' , '20px');
+
+
+        }
+        // This will fire each time the window is resized:
+        if($(window).width() <= 992 && $(window).width() >768 ) {
+            $('.cb').css('font-size' , '25px');
+            $('.cvv').css('font-size' , '13px');
+            $('.wis').css('font-size' , '30px');
+            $('.ord').css('font-size' , '30px');
+            $('.rec').css('font-size' , '30px');
+            $('.bhn').css('font-size' , '15px');
+            $('.pi').css('font-size' , '18px');
+        }
+        if($(window).width() <= 768 && $(window).width() >600 ){
+            $('.cb').css('font-size' , '22px');
+            $('.cvv').css('font-size' , '13px');
+            $('.wis').css('font-size' , '30px');
+            $('.ord').css('font-size' , '30px');
+            $('.rec').css('font-size' , '30px');
+            $('.bhn').css('font-size' , '15px');
+            $('.pi').css('font-size' , '18px');
+        }
+        if($(window).width() <= 600 && $(window).width() >520 ){
+            $('.cb').css('font-size' , '22px');
+            $('.cvv').css('font-size' , '13px');
+            $('.wis').css('font-size' , '30px');
+            $('.ord').css('font-size' , '30px');
+            $('.rec').css('font-size' , '30px');
+            $('.bhn').css('font-size' , '15px');
+            $('.pi').css('font-size' , '16px');
+        }
+        if($(window).width() <= 520 && $(window).width() >392 ){
+            $('.cb').css('font-size' , '18px');
+            $('.cvv').css('font-size' , '13px');
+            $('.wis').css('font-size' , '30px');
+            $('.ord').css('font-size' , '30px');
+            $('.rec').css('font-size' , '30px');
+            $('td').css('padding' , '8');
+            $('tr').css('padding' , '8');
+            $('th').css('padding' , '8');
+            $('.tt').css('padding-top' , '0');
+            $('.tty').css('padding-right' , '4px');
+            $('.bhn').css('font-size' , '15px');
+            $('.pi').css('font-size' , '13px');
+        }
+        if($(window).width() <= 392 ){
+            $('.cb').css('font-size' , '14  px');
+            $('.cvv').css('font-size' , '12px');
+            $('.wis').css('font-size' , '30px');
+            $('.ord').css('font-size' , '30px');
+            $('.rec').css('font-size' , '30px');
+            $('td').css('padding' , '6');
+            $('tr').css('padding' , '6');
+            $('th').css('padding' , '6');
+            $('.tt').css('padding-top' , '0');
+            $('.tty').css('padding-right' , '4px');
+            $('.cb').css('font-size' , '14px');
+            $('.bhn').css('font-size' , '10px');
+            $('.pi').css('font-size' , '11px');
+
+        }
+
+        if($(window).width() <= 332){
+            $('.cb').css('font-size' , '14px');
+            $('.cvv').css('font-size' , '10px');
+            $('.wis').css('font-size' , '30px');
+            $('.ord').css('font-size' , '30px');
+            $('.rec').css('font-size' , '30px');
+            $('td').css('padding' , '4');
+            $('tr').css('padding' , '4');
+            $('th').css('padding' , '4');
+            $('.tt').css('padding-top' , '0');
+            $('.tty').css('padding-right' , '4px');
+            $('.pi').css('font-size' , '10px');
+        }
+        if($(window).width() > 1200 ) {
+            $('.fr').css('font-size' , '25px');
+            $('.gr').css('font-size' , '30px');
+         }
+        if($(window).width() <= 1200 && $(window).width() >992 ) {
+            $('.fr').css('font-size' , '25px');
+            $('.gr').css('font-size' , '30px');
+        }
+        // This will fire each time the window is resized:
+        if($(window).width() <= 992 && $(window).width() >756 ) {
+            $('.fr').css('font-size' , '20px');
+            $('.gr').css('font-size' , '25px');
+        }
+        if($(window).width() <= 756 ){
+            $('.fr').css('font-size' , '25px');
+            $('.gr').css('font-size' , '30px');
+        } 
+        if($(window).width() <= 600 ){
+            $('.fr').css('font-size' , '20px');
+            $('.gr').css('font-size' , '25px');
+        } 
+
+    }).resize(); // This will simulate a resize to trigger the initial run.
+      var x = 1;
+     $('.variable').html(x);
+     var minus = $('.minus');
+     var plus = $('.plus');
+  
+           minus.click(function(){
+          x--;
+          if(x>0){
+            $('.variable').html(x);
+          }
+          else {
+            $('.variable').html('1');
+            return x = 1;
+          }
+         })
+
+
+         plus.click(function(){
+          x++;
+          $('.variable').html(x);
+            
+         })
+      
+      
+
+
+
+    </script>
+  </body>
+</html>
