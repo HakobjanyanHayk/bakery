@@ -538,6 +538,7 @@ table {
   font-weight: 700;
   height: 60px;
   font-size: 25px;
+  padding: 6px 8px 6px 8px;   
 }
 .confirm:hover{
   background-color: #343A40;
